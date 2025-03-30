@@ -192,7 +192,7 @@ def one_ui_group(n: int, is_img2img: bool, webui_info: WebuiInfo):
             w.ad_model = gr.Dropdown(
                 label="ADetailer detector" + suffix(n),
                 choices=model_choices,
-                value=model_choices[0],
+                value="None", #model_choices[0],
                 visible=True,
                 type="value",
                 elem_id=eid("ad_model"),
